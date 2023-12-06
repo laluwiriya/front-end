@@ -61,23 +61,24 @@ export default function Navbar() {
             SALES
           </h1>
         </div>
+
         <button onClick={handleClick}>
           <div
+            className="flex left-0 mt-[350px] absolute text-center text-zinc-400 text-base font-medium font-['Awesome']"
             onClick={() => {
               router.push("/login");
             }}
-            className="flex ml-1 md:ml-6 left-0 top-[170px] bottom-0 absolute text-center text-zinc-400 text-base font-medium font-['Poppins'] "
           >
-            <span className="flex flex-wrap">
-              <img className="ml-1" src="/ic3.svg" alt="" /> {"  "}
+            <span className="flex justify-center items-center">
+              <img className="ml-5" src="/ic3.svg" alt="" /> {"  "}
             </span>
-            <h1
+            <Link
               onClick={handleClick}
               href="/login"
-              className="flex left-0 top-[400px] md:top-[260px] bottom-0 absolute text-center text-zinc-400 text-base font-medium font-['Poppins'] hover:text-red-700 hover:font-bold"
+              className="flex absolute bottom-0 left-0 top-10 ml-5 text-center text-zinc-400 text-base font-medium font-['Awesome'] hover:text-red-700 hover:font-bold"
             >
               Log Out
-            </h1>
+            </Link>
           </div>
         </button>
       </div>
